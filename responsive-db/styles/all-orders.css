@@ -1,0 +1,126 @@
+/* General page styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+/* Sidebar and main content layout */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Table headers */
+.table th {
+    background-color: #338ec9;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Table rows */
+.table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Hover effect for table rows */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Links in table */
+.table td a {
+    color: #338ec9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.table td a:hover {
+    color: #1a6fb2;
+}
+
+/* No orders found message */
+.table td[colspan="11"] {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}
+
+/* Additional column styling for links */
+.table td a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #338ec9;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.table td a:hover {
+    background-color: #1a6fb2;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+.customer-summary {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .summary-card {
+    background-color: #dce1eb;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .percentage-change.up {
+    color: green;
+  }
